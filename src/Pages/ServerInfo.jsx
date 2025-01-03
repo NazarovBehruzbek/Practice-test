@@ -158,7 +158,7 @@ const ServerInfo = () => {
 
   return (
     <div
-      className="absolute top-4 right-4 flex-1 p-2"
+      className="absolute top-1 right-4 flex-1 p-2"
       onClick={(e) => e.stopPropagation()}
     >
       <div className="flex gap-2">
