@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import mapscart from "../assets/uz.svg";
-import ProgressCount from "./Progrescount";
+import ProgressCount from "./ProgresCount";
 import ProgressBars from "./ProgressBars";
 import ServerInfo from "./ServerInfo";
 
