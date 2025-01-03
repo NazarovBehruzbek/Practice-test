@@ -15,7 +15,7 @@ const CollapsibleCard = ({ title, icon, children }) => {
 
   return (
     <div
-      className="bg-[#1F2937]/90 backdrop-blur-sm text-white mb-2 w-[300px]"
+      className="bg-[#1F2937]/90 backdrop-blur-sm text-white mb-2 w-[270px]"
       onClick={(e) => e.stopPropagation()}
     >
       <div
@@ -53,13 +53,13 @@ const CollapsibleCard = ({ title, icon, children }) => {
 
 const NotificationCard = () => (
   <div onClick={(e) => e.stopPropagation()}>
-    <div className="bg-[#1F2937]/90 backdrop-blur-sm p-3 text-white  w-[300px] h-[100px] border-1 rounded-md">
+    <div className="bg-[#1F2937]/90 backdrop-blur-sm p-3 text-white  w-[270px] h-[100px] border-1 rounded-md">
       <div className="flex items-start justify-between">
         <div className="flex items-start gap-2">
           <div>
             <img src={succesnot} alt="success" />
           </div>
-          <div className="w-[250px] text-xl">
+          <div className="text-xl">
             <div className="text-xs font-medium">Предупреждение!</div>
             <div className="text-[11px] text-gray-400 mt-0.5">
               Server Tashkent Wiyon
@@ -68,7 +68,7 @@ const NotificationCard = () => (
               <div className="text-[11px] text-gray-400">
                 IP address: 192.168.1.220
               </div>
-              <div className="text-[11px] text-gray-400 ">06.01.2024</div>
+              <div className="text-[11px] text-gray-400 ml-7">06.01.2024</div>
             </div>
           </div>
         </div>
@@ -89,13 +89,13 @@ const NotificationCard = () => (
       </div>
     </div>
 
-    <div className="bg-[#1F2937]/90 backdrop-blur-sm p-3 mt-2 text-white  w-[300px] h-[100px] border-1 rounded-md">
+    <div className="bg-[#1F2937]/90 backdrop-blur-sm p-3 mt-2 text-white  w-[270px] h-[100px] border-1 rounded-md">
       <div className="flex items-start justify-between">
         <div className="flex items-start gap-2">
           <div>
             <img src={warnnot} alt="warn" />
           </div>
-          <div className="w-[250px] text-xl">
+          <div className="text-xl">
             <div className="text-xs font-medium">Предупреждение!</div>
             <div className="text-[11px] text-gray-400 mt-0.5">
               Server Tashkent Wiyon
@@ -104,7 +104,7 @@ const NotificationCard = () => (
               <div className="text-[11px] text-gray-400">
                 IP address: 192.168.1.220
               </div>
-              <div className="text-[11px] text-gray-400 ">06.01.2024</div>
+              <div className="text-[11px] text-gray-400 ml-7">06.01.2024</div>
             </div>
           </div>
         </div>
@@ -201,7 +201,6 @@ const ServerInfo = () => {
               </div>
             ))}
           </CollapsibleCard>
-
           <CollapsibleCard title="Регион" icon={region}>
             {Object.entries(regionData).map(([key, value], index) => (
               <div key={index} className="flex justify-between text-xs py-1">
@@ -210,7 +209,6 @@ const ServerInfo = () => {
               </div>
             ))}
           </CollapsibleCard>
-
           <CollapsibleCard title="Server name" icon={serverinfo}>
             {Object.entries(serverDetails).map(([key, value], index) => (
               <div key={index} className="flex justify-between text-xs py-1">
